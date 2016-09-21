@@ -30,6 +30,11 @@ module.exports = {
     {
       test: /\.(jpe?g|png)$/,
       loader: 'file-loader'
+    },
+    //引入bootstrap后，提示字体错误，需添加以下内容，并安装url-loader包
+    {
+      test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+      loader: "url?limit=10000"
     }]
   }
 };
