@@ -7,7 +7,7 @@ class LeftNav extends React.Component {
   render () {
     return(
       <div className='left-nav'>
-        <h2>Emily’s Web</h2>
+        <h2>Emily’s Web @{this.props.title}</h2>
         <div className='line'></div>
         <Link to='/' activeStyle={{color:'#FFEB3B'}} onlyActiveOnIndex={true}>
           <span className="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home

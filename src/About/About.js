@@ -1,10 +1,14 @@
 import React from 'react';
+import Echarts from '../components/Echarts.js'
+
 
 class About extends React.Component {
+
   render () {
+
     return(
       <div>
-        This is About page!
+        <Echarts />
       </div>
     )
 
